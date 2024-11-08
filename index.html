@@ -1,0 +1,101 @@
+<!-- This is an HTML comment. The shortcut to make one in VSCode is "ctrl + /" -->
+
+<!DOCTYPE html> 
+<!-- The DOCTYPE declaration tells the browser what HTML version to render 
+the document with (in this case HTML 5)-->
+
+<html lang="en">
+<!-- The html element is the root element of the document. Every other element 
+descends from it. Elements are all related as either parents, children or siblings--> 
+<!-- Attributes give additional information to HTML elements and always go in 
+the opening tag. Not all attributes require a value -->
+<!-- The lang attribute can also instead be added to individual elements 
+throughout the page if desired -->
+    
+    <head>
+    <!-- The head element contains meta-information *about* the webpage.
+    It should never contain an element meant to display content *on* the page. -->
+        
+        <meta charset="UTF-8">
+        <!-- This meta element uses the charset attribute to tell the browser how 
+        the plain text of the document is encoded-->
+        
+        <title>Trashzone</title>
+        <!-- The title element gives the webpage a human-readable name in its browser tab -->
+    
+    </head>
+    <!-- Most elements need to be "wrapped" with a matching end tag starting with "/""-->
+
+    <body>
+    <!-- The body contains all elements meant to display content to users on the webpage -->
+        
+        <h1>Welcome to the Trashzone!</h1>
+        <!-- Headings are available in 6 classes of decreasing size and importance -->
+
+        <a href="https://knowyourmeme.com/memes/happy-cat" target="_blank" 
+rel="noopener noreferrer"><img src="images/happy-cat.jpeg" alt="Happy Cat" 
+height="255" width="196"></a>
+        <!-- The img element is a void element and as such does not need a closing tag. -->
+        <!-- The src attribute can reference either absolute or relative paths-->
+        <!-- The alt attribute includes a description of the image for screen readers,
+        or in the case that the image fails to load -->
+        <!-- Height and width should also be specified to prevent future warping -->
+        
+        <h2><u>-An example of what to expect-</u></h2>
+        <!-- Each consecutively numbered heading appears smaller and is rated less 
+         important than the lower numbered headings  -->
+        
+        <p><em>This </em>website is <strong>mine</strong>. There are many like it, 
+but <em>this one</em> is <strong>mine</strong>.</p>
+        <!-- Plain text needs to be wrapped in paragraph tags to form line breaks. --> 
+        
+        <!-- It can be altered with tags like <em> and <strong> which convey more 
+        emphasis or strength respectively -->
+
+        <p>This is a second paragraph.</p>
+        
+        <h2><u>List Test</u></h2>
+        <!-- <u> underlines text -->
+
+        <ol>
+        <!-- Ordered lists will be numbered -->
+        
+            <li>Item A</li>
+            <!-- The <li> tag defines individual list elements -->
+
+            <li>Item B</li>
+            <li>Item C</li>
+        </ol>
+        
+        <h2><u>Links</u></h2>
+
+        <ul>
+        <!-- Unordered lists use bullet points -->
+        
+            <li><a href="./pages/page1.html">Page 1</a></li>
+            <!-- The <a> tag defines an anchor element, which can create a link when 
+            passed a value from the href (hypertext reference) attribute-->
+            <!-- Href can reference absolute and relative paths -->
+
+            <li><a href="./pages/page2.html">Page 2</a></li>
+            <!-- If the target attribute is not used, it defaults to "_self" and the new
+            page will open in the current tab -->
+
+            <li><a href="https://www.wikipedia.org/" target="_blank" 
+rel="noopener noreferrer">Wikipedia</a> (opens in a new tab)</li>
+            <!-- Setting target to "_blank" will open the link in a new tab -->
+            <!-- Using rel to specify "noopener" prevents the target webpage from
+            gaining access to the webpage from which it was opened -->
+            <!-- "noreferrer" prevents the opened link from knowing which webpage or
+            resource has a link to it. It includes "noopener" and can therefore be
+            used on its own if desired -->
+
+        </ul>
+
+        <img src="https://static.wikia.nocookie.net/ghostintheshell/images/f/fe/
+Laughing_man.svg/revision/latest?cb=20100909044445&path-prefix=en" alt="Laughing Man Logo"
+height="400" width="450">
+
+    </body>
+
+</html>
